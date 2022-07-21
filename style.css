@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: none;
+}
+
+.container {
+    width: 1150px;
+    background-color: black;
+    color: white;
+    height: 550px;
+    border: 1px solid black;
+    margin-left: 95px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.box {
+    display: flex;
+
+}
+
+.heading {
+    width: 50%;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-top: -50px;
+}
+
+.button {
+    display: flex;
+    gap: 25px;
+    border: 1px solid #c63636;
+    width: 30%;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #7b1717;
+    border-radius: 5px;
+}
+
+.button-title {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.icon {
+    margin-left: 15px;
+}
+
+/* main */
+
+.icon-article {
+    display: flex;
+    flex-direction: row;
+    gap: 190px;
+}
+
+h3 {
+    font-weight: 400;
+    border: 1px solid black;
+    width: 85px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-weight: 500px;
+    width: 300px;
+}
+
+.summary {
+    width: 265px;
+    height: 170px;
+}
+
+.blogs {
+    display: flex;
+    gap: 30px;
+}
+
+main {
+    margin-left: 100px;
+    margin-top: 29px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.blog-1 {
+    border-radius: 30px;
+    width: 19vw;
+    height: 235px;
+}
+
+.blog {
+    padding: 15px;
+    border: 1px solid black;
+
+    text-align: center;
+    align-items: center;
+    background-color: black;
+
+
+}
+
+.content {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 15px;
+
+
+
+}
+
+#blg {
+    border: 1px solid #c23333;
+    margin-top: 12px;
+    background-color: #c63333;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#blg2 {
+    border: 1px solid white;
+    margin-top: 12px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+#blg3 {
+    border: 1px solid white;
+    margin-top: 12px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+/* footer */
+.inner-footer {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.goal {
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 1.5px solid rgb(188, 186, 186);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+
+
+.links ul {
+    display: flex;
+}
+
+.quick-iteams {
+    list-style: none;
+}
+
+.quick-iteams a {
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 20px;
+    color: white;
+    transition: all .25s;
+}
+
+.outer-footer {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: black;
+}
+
+
+/* mobile view */
+@media only screen and (max-width: 645px) {
+
+    .container,
+    .heading {
+        width: 80%;
+        height: 650px;
+        margin-right: 100px;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    h1,
+    .icon {
+        margin-top: 5px;
+        font-size: 32px;
+        font-weight: 700;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .button-title {
+        width: 15vw;
+        margin-right: -25px;
+        margin-bottom: 15px;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .fa-solid {
+        margin-bottom: 25px;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .icon {
+        width: 170px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        align-content: flex-end;
+        justify-content: space-between;
+        gap: 0;
+        position: relative;
+        row-gap: 0;
+    }
+
+    .icon-symbol {
+        padding-right: 20px;
+    }
+
+}
